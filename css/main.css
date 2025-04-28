@@ -1,0 +1,96 @@
+@import url(./reset.css);
+
+/* theme 
+
+#5386a5
+#cccccc
+#353949
+#6c5ce7 */
+
+:root{
+    --bgcolor: #03193d;
+    --bgcolor-figcaption:#cccccc;
+    --figure-bgcolor:#353949;
+    --bgcolor-bloquote:#6c5ce7;
+    --color-text:#fff;
+}
+header{
+    line-height: 8rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--color-text);
+}
+figure{
+    max-width: 80rem;
+    margin: 5rem auto;
+    border:solid .1rem transparent;
+}
+figure img{
+    display: inline-block;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    clip-path: circle(35%);
+    filter: grayscale(50%);
+}
+figure figcaption h2{
+    background: var(--bgcolor-figcaption);
+    color: #222;
+    width: max-content;  /*largeur devient celle du contenu adapter le conteneur au contenu*/
+    line-height: 5rem;
+    padding: 0 1rem;
+    border-radius: 1rem 1rem 0 0;
+   
+
+}
+figcaption p{
+    color: var(--color-text);
+    padding: .5rem;
+    background: var(--figure-bgcolor);
+    text-align: justify;
+    border-radius: .4rem;
+}
+figcaption{
+    border-radius: .4rem;
+}
+blockquote{
+    background-color: var(--bgcolor-bloquote);
+    max-width: 80rem;
+    margin: 0 auto;
+    p{
+        color:var(--color-text);
+        text-align: center;
+        padding: 1rem;
+        a{
+            color:inherit;
+        }
+    }
+}
+.table-primary{
+    max-width: 100rem;
+    margin:0 auto;
+    
+   table{
+    width: 100%;
+    color: #fff;
+    border-collapse: collapse;
+    border: solid .1rem #fff;
+    thead th, tbody td, tfoot th{
+        padding: 1rem;
+        border-collapse: collapse;
+    border: solid .1rem #fff;
+    }
+
+    thead th{
+        background-color: #cccccc;
+        color: #222;
+        font-weight: normal;
+    }
+    
+   }
+}
+footer *{
+    text-align: center;
+    color: var(--color-text);
+}
