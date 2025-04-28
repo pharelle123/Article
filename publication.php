@@ -13,7 +13,7 @@ include_once __DIR__ . '/partial/header.inc.php';
 <main>
     <?php 
     include_once __DIR__ . '/controller/controllerArticle.php';
-    $articles = Articles::Article();
+
     ?>
 
 <div class="table-primary" role="region" aria-labelledby="table">
@@ -34,8 +34,8 @@ include_once __DIR__ . '/partial/header.inc.php';
                     
                       <?php foreach($articles as $value): ?>
                         <tr>
-                            <td><?= $value["title"] ?></td>
-                            <td><?= $value["content"] ?></td>
+                            <td><?= $value["titre"] ?></td>
+                            <td><?= $value["description"] ?></td>
                             <td>
                                 <a href="<?= $value["url"]?>" target="blank">
                                     <?= $value["link"] ?> &raquo;</a>

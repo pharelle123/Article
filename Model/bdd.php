@@ -2,7 +2,7 @@
 
 # db.php
 $host = 'localhost';
-$dbname = 'languages';
+$dbname = 'posts';
 $username = 'root';
 $password = '';
 
