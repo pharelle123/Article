@@ -87,6 +87,10 @@ blockquote{
         color: #222;
         font-weight: normal;
     }
+    tbody td a{
+        color:#fff;
+
+    }
     
    }
 }
